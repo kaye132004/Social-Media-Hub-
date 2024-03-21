@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL SANGRE</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: black;
+    }
+
+    .container {
+      text-align: center;
+      color: white;
+    }
+
+    .logo {
+      margin-bottom: 20px;
+    }
+
+    .icon {
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .icon:hover {
+      color: #CCCCCC;
+    }
+
+    .hidden {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <header class="logo">
+  
+    <img src="logo.png" alt="Logo">
+  </header>
+  <h1>EL SANGRE</h1>
+  <div class="icons">
+    <i class="icon fab fa-facebook" onclick="toggleAccount('facebook')"></i>
+    <i class="icon fas fa-envelope" onclick="toggleAccount('email')"></i>
+    <i class="icon fab fa-pinterest" onclick="toggleAccount('pinterest')"></i>
+    <i class="icon fab fa-github" onclick="toggleAccount('github')"></i>
+  </div>
+  <div id="https://www.facebook.com/Villarosa.Kate" class="hidden">
+    <!-- Facebook Account Content -->
+
+  </div>
+  <div id="@k13villarosa@gmail.com" class="hidden">
+    <!-- Email Account Content -->
+
+  </div>
+  <div id="https://www.pinterest.ph/k13villarosa2004/" class="hidden">
+    <!-- Pinterest Account Content -->
+
+  </div>
+  <div id="https://github.com/kaye132004" class="hidden">
+    <!-- GitHub Account Content -->
+
+  </div>
+</div>
+
+<script>
+  function toggleAccount(id) {
+    var account = document.getElementById(id);
+    if (account.classList.contains('hidden')) {
+      account.classList.remove('hidden');
+    } else {
+      account.classList.add('hidden');
+    }
+  }
+</script>
+
+</body>
+</html>
